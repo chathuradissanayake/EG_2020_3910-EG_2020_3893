@@ -1,0 +1,24 @@
+﻿<Window x:Class="groupproject2.Results"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:groupproject2"
+        mc:Ignorable="d"
+        Title="Results" Height="450" Width="800">
+    <Grid Margin="-2,0,2,0">
+        <TextBlock Text="End Semester Marks:" Margin="10,26,0,383" HorizontalAlignment="Left" Width="158" Height="25"/>
+        <TextBlock Text="EE3301 Analog Electronics:" Margin="10,70,474,344" Height="20"/>
+        <TextBox x:Name="txtAnalogElectronics" Margin="360,70,10,346"/>
+        <TextBlock Text="EE3302 Data Structures and Algorithms:" Margin="10,108,474,306" Height="20"/>
+        <TextBox x:Name="txtDataStructures" Margin="360,108,10,308"/>
+        <TextBlock Text="EE3250 GUI Programming:" Margin="10,146,0,268" HorizontalAlignment="Left" Width="316" Height="20"/>
+        <TextBox x:Name="txtGUIProgramming" Margin="360,146,10,270"/>
+        <TextBlock Text="IS3302 Complex Analysis and Mathematical Transformers:" Margin="10,184,474,230" Height="20"/>
+        <TextBox x:Name="txtComplexAnalysis" Margin="360,184,10,230"/>
+        <CheckBox x:Name="chkCertify" Content="I certify all the above details are true" Margin="254,224,254,190"/>
+        <Button Content="Calculate GPA" Margin="296,257,263,157" Click="Submit_Click"/>
+        <Button Content="Submit" Margin="298,309,261,105" Click="Submit_Click"/>
+
+    </Grid>
+</Window>

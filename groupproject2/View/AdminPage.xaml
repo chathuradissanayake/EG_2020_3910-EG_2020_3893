@@ -1,0 +1,232 @@
+﻿<Window x:Class="groupproject2.View.AdminPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:groupproject2.View"
+        mc:Ignorable="d"
+        Title="AdminPage" Height="450" Width="800">
+    <Grid  >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/View/admin.jpg"/>
+        </Grid.Background>
+
+        <ListView x:Name="ItemList1" Margin="54,63,54,0" Height="172" VerticalAlignment="Top" BorderBrush="#FF0D295C" FontSize="14" FontWeight="Bold" FontFamily="Bahnschrift Condensed">
+            <ListView.Background>
+                <SolidColorBrush Color="Black" Opacity="0.4"/>
+            </ListView.Background>
+            <ListView.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Clear" Click="MenuItem_Click"/>
+                </ContextMenu>
+            </ListView.ContextMenu>
+            <ListView.View>
+                <GridView>
+                    <GridView.ColumnHeaderContainerStyle>
+                        <Style TargetType="{x:Type GridViewColumnHeader}">
+                            <Setter Property="Height" Value="28"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <SolidColorBrush Color="Black" Opacity="0.6"/>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </GridView.ColumnHeaderContainerStyle>
+                    <GridViewColumn Header="Leturer ID" Width="130"  DisplayMemberBinding="{Binding Id}"/>
+                    <GridViewColumn Header="Lecturer Name" Width="400" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn Header="Department" Width="150" DisplayMemberBinding="{Binding Department}"/>
+                </GridView>
+            </ListView.View>
+            <DataGrid Height="100" Width="100" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        </ListView>
+
+
+
+
+        <Button Content="Create" HorizontalAlignment="Left" Margin="96,359,0,0" VerticalAlignment="Top" Height="38" Width="126" 
+            Command="{Binding AddStudentCommand}" BorderThickness="1" BorderBrush="#FFF2FF00" Foreground="White" FontSize="16" FontWeight="Bold" FontFamily="Agency FB" Click="Button_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border x:Name="ButtonBorder" CornerRadius="10" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="ButtonBorder" Property="Background" Value="purple"/>
+
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter TargetName="ButtonBorder" Property="Background" Value="#FF7B68EE"/>
+
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <SolidColorBrush Color="#FFD82B43" Opacity="0.4"/>
+            </Button.Background>
+        </Button>
+
+
+        <Button Content="Update" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="126" Click="Button_Click" Margin="261,359,0,0" RenderTransformOrigin="-0.276,0.1" BorderBrush="#FFFCFF01" FontSize="16" FontWeight="Bold" FontFamily="Agency FB" Foreground="#FFF2EEEE">
+            <Button.Resources>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border x:Name="ButtonBorder" CornerRadius="10" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="ButtonBorder" Property="Background" Value="purple"/>
+
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter TargetName="ButtonBorder" Property="Background" Value="#FF7B68EE"/>
+
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <SolidColorBrush Color="#FFD82B43" Opacity="0.4"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="419,359,0,0" VerticalAlignment="Top" Height="38" Width="126" BorderBrush="#FFFEF207" Foreground="#FFFDFDFD" FontFamily="Agency FB" FontSize="16" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border x:Name="ButtonBorder" CornerRadius="10" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="ButtonBorder" Property="Background" Value="purple"/>
+
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter TargetName="ButtonBorder" Property="Background" Value="#FF7B68EE"/>
+
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <SolidColorBrush Color="#FFDB1F1F" Opacity="0.2"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="581,359,0,0" VerticalAlignment="Top" Height="38" Width="126" BorderBrush="#FFFEF207" Foreground="#FFFDFAFA" FontFamily="Agency FB" FontSize="16" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border x:Name="ButtonBorder" CornerRadius="10" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="ButtonBorder" Property="Background" Value="purple"/>
+
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter TargetName="ButtonBorder" Property="Background" Value="#FF7B68EE"/>
+
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <SolidColorBrush Color="#FFD82B43" Opacity="0.2"/>
+            </Button.Background>
+        </Button>
+        <TextBox HorizontalAlignment="Left" Margin="190,251,0,0" TextWrapping="Wrap" Text="Lecturer ID :" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" Background="{x:Null}" Foreground="White" FontFamily="Bahnschrift Condensed" FontSize="18" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="leturerid" 
+                     Text="{Binding Username, Mode=TwoWay}"
+                     Margin="326,248,0,161" HorizontalAlignment="Left"
+                     Width="300" BorderBrush="#FFFF1A00" Foreground="#FF010000" Opacity="0.4" FontFamily="Bahnschrift Light" FontSize="16" TextAlignment="Center" Cursor="IBeam" BorderThickness="2,2,2,2" Height="25" Background="White">
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                    <ScrollViewer x:Name="PART_ContentHost" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBox x:Name="lecturer_name" 
+            Text="{Binding Username, Mode=TwoWay}"
+            Margin="326,280,0,129" HorizontalAlignment="Left"
+            Width="300" BorderBrush="#FFFF1A00" Foreground="#FF010000" Opacity="0.4" FontFamily="Bahnschrift Light" FontSize="16" TextAlignment="Center" Cursor="IBeam" BorderThickness="2,2,2,2" Height="25" Background="White">
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type TextBox}">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                    <ScrollViewer x:Name="PART_ContentHost" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBox x:Name="department" 
+            Text="{Binding Username, Mode=TwoWay}"
+            Margin="326,314,0,95" HorizontalAlignment="Left"
+            Width="300" BorderBrush="#FFFF1A00" Foreground="#FF010000" Opacity="0.4" FontFamily="Bahnschrift Light" FontSize="16" TextAlignment="Center" Cursor="IBeam" BorderThickness="2,2,2,2" Height="25" Background="White">
+            <TextBox.Style>
+                <Style TargetType="{x:Type TextBox}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type TextBox}">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                    <ScrollViewer x:Name="PART_ContentHost" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBox HorizontalAlignment="Left" Margin="189,283,0,0" TextWrapping="Wrap" Text="Lecturer Name :" VerticalAlignment="Top" Width="139" TextChanged="TextBox_TextChanged" Background="{x:Null}" Foreground="White" FontFamily="Bahnschrift Condensed" FontSize="18" BorderBrush="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Margin="190,313,0,0" TextWrapping="Wrap" Text="Department :" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged" Background="{x:Null}" Foreground="White" FontFamily="Bahnschrift Condensed" FontSize="18" BorderBrush="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Margin="275,15,0,0" TextWrapping="Wrap" Text=" Add Lecturer Details" VerticalAlignment="Top" Width="262" TextChanged="TextBox_TextChanged" FontSize="28" FontWeight="Bold" FontFamily="Impact" RenderTransformOrigin="0.495,0.508" Height="37" BorderBrush="{x:Null}">
+            <TextBox.Foreground>
+                <SolidColorBrush Color="#FF090000" Opacity="0.8"/>
+            </TextBox.Foreground>
+            <TextBox.Background>
+                <SolidColorBrush Color="#FFD6D6D6" Opacity="0"/>
+            </TextBox.Background>
+        </TextBox>
+
+    </Grid>
+</Window>

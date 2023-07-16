@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ultravoilet-holo-wallpaper-3440x1440_15.jpg" />
+    <None Remove="v1016-c-08_1-ksh6mza3.jpg" />
+    <None Remove="v1016-c-08_1-ksh6mza3.png" />
+    <None Remove="View\admin.jpg" />
+    <None Remove="View\macos-purple-abstract-background-hd-wallpaper-1920x1080-77.jpg" />
+    <None Remove="View\pexels-pixabay-235986.jpg" />
+    <None Remove="View\submit-orange.png" />
+    <None Remove="View\ultravoilet-holo-wallpaper-3440x1440_15.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
+    <PackageReference Include="MahApps.Metro.IconPacks" Version="4.11.0" />
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ultravoilet-holo-wallpaper-3440x1440_15.jpg" />
+    <Resource Include="v1016-c-08_1-ksh6mza3.jpg" />
+    <Resource Include="v1016-c-08_1-ksh6mza3.png" />
+    <Resource Include="View\admin.jpg" />
+    <Resource Include="View\macos-purple-abstract-background-hd-wallpaper-1920x1080-77.jpg" />
+    <Resource Include="View\pexels-pixabay-235986.jpg" />
+    <Resource Include="View\submit-orange.png" />
+    <Resource Include="View\ultravoilet-holo-wallpaper-3440x1440_15.jpg" />
+  </ItemGroup>
+
+</Project>

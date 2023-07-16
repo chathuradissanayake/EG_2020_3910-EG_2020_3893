@@ -1,0 +1,281 @@
+﻿<Window x:Class="groupproject2.View.addstudent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:groupproject2.View"
+        mc:Ignorable="d"
+        Title="addstudent" Height="450" Width="800">
+    <Grid OpacityMask="#FFEDD3D3">
+        <Grid.Background>
+            <ImageBrush ImageSource="/View/macos-purple-abstract-background-hd-wallpaper-1920x1080-77.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="EE3301 Analog Electronics" Margin="56,249,566,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="178" Grid.ColumnSpan="2" Foreground="#FFF5F7F4" FontFamily="Bahnschrift SemiBold Condensed" FontSize="13"/>
+        <TextBox x:Name="EE3301AnalogElectronics" Margin="279,247,361,0" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" BorderBrush="Red">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF090000" Opacity="0.2"/>
+            </TextBox.Background>
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                    <ScrollViewer x:Name="PART_ContentHost" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock Text="EE3302 Data Structures and Algorithms" Margin="56,279,566,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="178" Grid.ColumnSpan="2" Foreground="#FFF5F7F4" FontFamily="Bahnschrift SemiBold Condensed" FontSize="13"/>
+        <TextBox x:Name="EE3302DataStructuresandAlgorithms" Margin="279,277,361,0" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" BorderBrush="Red">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF090000" Opacity="0.2"/>
+            </TextBox.Background>
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                    <ScrollViewer x:Name="PART_ContentHost" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock Text="EE3203 Electrical and Electronic Measurements" Margin="56,311,535,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Foreground="#FFF5F7F4" FontFamily="Bahnschrift SemiBold Condensed" FontSize="13"/>
+        <TextBox x:Name="EE3203ElectricalandElectronicMeasurements" Margin="279,309,361,0" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" BorderBrush="Red">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF090000" Opacity="0.2"/>
+            </TextBox.Background>
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                    <ScrollViewer x:Name="PART_ContentHost" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock Text="EE3305 Signals and Systems" Margin="56,344,566,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="178" Grid.ColumnSpan="2" Foreground="#FFF5F7F4" FontFamily="Bahnschrift SemiBold Condensed" FontSize="13"/>
+        <TextBox x:Name="EE3305SignalsandSystems" Margin="279,342,361,0" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" BorderBrush="Red">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF090000" Opacity="0.2"/>
+            </TextBox.Background>
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                    <ScrollViewer x:Name="PART_ContentHost" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock Text="EE3250 GUI Programming" Margin="56,376,566,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="178" Grid.ColumnSpan="2" Foreground="#FFF5F7F4" FontFamily="Bahnschrift SemiBold Condensed" RenderTransformOrigin="0.515,1.619" FontSize="13"/>
+        <TextBox x:Name="EE3250GUIProgramming" Margin="279,376,361,0" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" BorderBrush="Red">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF090000" Opacity="0.2"/>
+            </TextBox.Background>
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                    <ScrollViewer x:Name="PART_ContentHost" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <Button Content="" HorizontalAlignment="Left" Margin="538,349,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="48" Width="140" BorderBrush="{x:Null}" FontFamily="Arial Black" FontWeight="Bold" FontSize="14" Foreground="{x:Null}">
+            <Button.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border x:Name="ButtonBorder" CornerRadius="10" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+           
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter TargetName="ButtonBorder" Property="Background" Value="orange"/>
+
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <ImageBrush ImageSource="/View/submit-orange.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Calculate&#xA;    GPA" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="543,207,0,0" VerticalAlignment="Top" Click="Button_Click_3" Height="56" Width="121" Foreground="#FFF5E6E6" BorderBrush="#FF7B1C1C" FontFamily="Arial Black" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border x:Name="ButtonBorder" CornerRadius="10" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="ButtonBorder" Property="Background" Value="purple"/>
+
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter TargetName="ButtonBorder" Property="Background" Value="#FF7B68EE"/>
+
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <SolidColorBrush Color="#FFEE0000" Opacity="0.36"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="EE3250GUIProgramming_Copy" Margin="519,297,105,0" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" RenderTransformOrigin="0.436,1.71" BorderBrush="Black" TextAlignment="Center">
+            <TextBox.Background>
+                <SolidColorBrush Color="Aqua" Opacity="0.2"/>
+            </TextBox.Background>
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                    <ScrollViewer x:Name="PART_ContentHost" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock Text="Registration No :" Margin="56,64,634,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" LineHeight="6" Foreground="#FFF5F7F4" FontFamily="Calibri Light" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="RegistrationNo" Margin="218,62,278,0" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" BorderBrush="#FFFC0000">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF090000" Opacity="0.2"/>
+            </TextBox.Background>
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                    <ScrollViewer x:Name="PART_ContentHost" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+
+        <TextBlock Text="Name :" Margin="56,94,634,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Foreground="#FFF5F7F4" FontWeight="Bold" FontFamily="Calibri Light" FontSize="14"/>
+        <TextBox x:Name="Name" Margin="218,92,278,0" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" BorderBrush="Red">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF090000" Opacity="0.2"/>
+            </TextBox.Background>
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                    <ScrollViewer x:Name="PART_ContentHost" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBlock Text="Department :" Margin="56,124,634,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Foreground="#FFF5F7F4" FontFamily="Calibri Light" FontSize="14"/>
+        <TextBox x:Name="department" Margin="218,122,278,0" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" BorderBrush="Red">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF090000" Opacity="0.2"/>
+            </TextBox.Background>
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                    <ScrollViewer x:Name="PART_ContentHost" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="304,170,0,0" TextWrapping="Wrap" Text="END SEMESTER MARKS" VerticalAlignment="Top" Width="189" BorderBrush="{x:Null}" FontFamily="Britannic Bold" FontWeight="Bold" FontSize="16">
+            <TextBox.Foreground>
+                <SolidColorBrush Color="Black" Opacity="0.8"/>
+            </TextBox.Foreground>
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBlock Text="Index No :" Margin="57,209,662,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Foreground="#FFF5F7F4" FontFamily="Berlin Sans FB" FontSize="16"/>
+        <TextBox x:Name="indexno" Margin="143,0,436,0" VerticalAlignment="Center" Height="20" Grid.ColumnSpan="2" BorderBrush="Black">
+            <TextBox.Background>
+                <SolidColorBrush Color="#FF090000" Opacity="0.2"/>
+            </TextBox.Background>
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                                    <ScrollViewer x:Name="PART_ContentHost" />
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="566,273,0,0" TextWrapping="Wrap" Text="GPA VALUE&#xD;&#xA;" VerticalAlignment="Top" Width="79" BorderBrush="{x:Null}" RenderTransformOrigin="0.303,1.786" Foreground="#FFF3ECEC" FontFamily="Dubai Medium" FontWeight="Bold" FontSize="13" Height="20" TextChanged="TextBox_TextChanged" Background="{x:Null}"/>
+
+        <CheckBox x:Name="confirm" Content="Confirm" Margin="574,336,154,0" VerticalAlignment="Top" Height="20" Grid.ColumnSpan="2" Foreground="#FFF5F7F4" FontFamily="Dubai" FontWeight="Bold" RenderTransformOrigin="0.539,1.743"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,14,0,0" TextWrapping="Wrap" Text="Add Student Details" VerticalAlignment="Top" Width="244" TextChanged="TextBox_TextChanged" FontSize="28" FontWeight="Bold" FontFamily="Impact" RenderTransformOrigin="0.495,0.508" Height="37" BorderBrush="{x:Null}" Grid.Column="1">
+            <TextBox.Foreground>
+                <SolidColorBrush Color="#FF090000" Opacity="0.8"/>
+            </TextBox.Foreground>
+            <TextBox.Background>
+                <SolidColorBrush Color="#FFD6D6D6" Opacity="0"/>
+            </TextBox.Background>
+        </TextBox>
+    </Grid>
+</Window>
